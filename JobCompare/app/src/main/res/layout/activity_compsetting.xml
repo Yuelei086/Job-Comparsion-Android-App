@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompsettingActivity">
+
+    <LinearLayout
+        android:id="@+id/settingHeadingsLayout"
+        android:layout_width="411dp"
+        android:layout_height="135dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="0dp"
+        android:paddingVertical="1dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/settingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settingHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comparisonWeightLayout"
+        android:layout_width="411dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/settingHeadingsLayout"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/comparisonWeightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="Comparison Weights"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yearlySalaryWHLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toBottomOf="@+id/comparisonWeightLayout"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/yearlySalaryTextLayout"
+            android:layout_width="178dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/yearlySalaryText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="Yearly Salary"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                android:translationX="15dp"
+                android:translationY="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/yearlySalaryWeight"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:height="50dp"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yearlyBonusWHLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="55dp"
+        tools:layout_editor_absoluteY="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/yearlySalaryWHLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="178dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/yearlyBonusText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                android:translationX="15dp"
+                android:translationY="10dp"
+                android:text="Yearly Bonus" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="53dp"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/yearlyBonusWeight"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:height="50dp"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="55dp"
+        tools:layout_editor_absoluteY="300dp"
+        android:id="@+id/wklytlworkWHLayout"
+
+        app:layout_constraintTop_toBottomOf="@+id/yearlyBonusWHLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="178dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wklytlworkText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                android:translationX="15dp"
+                android:translationY="10dp"
+                android:text="Weekly Telework" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/wklytlworkWeight"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:height="50dp"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="55dp"
+        tools:layout_editor_absoluteY="350dp"
+        android:id="@+id/lvTimeWHLayout"
+        app:layout_constraintTop_toBottomOf="@+id/wklytlworkWHLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="178dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lvTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                android:translationX="15dp"
+                android:translationY="10dp"
+                android:text="Leave Time" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/lvTimeWeight"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:height="50dp"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="55dp"
+        tools:layout_editor_absoluteY="400dp"
+        android:id="@+id/gymAllowanceWHLayout"
+        app:layout_constraintTop_toBottomOf="@+id/lvTimeWHLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="178dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gymAllowanceText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                android:translationX="15dp"
+                android:translationY="10dp"
+                android:text="Gym Allowance" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="53dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/gymAllowanceWeight"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:height="50dp"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="274dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="456dp"
+        android:id="@+id/buttonsLayout"
+        app:layout_constraintTop_toBottomOf="@+id/gymAllowanceWHLayout"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:orientation="vertical"
+
+            android:translationX="40dp"
+            android:translationY="60dp">
+
+            <Button
+                android:id="@+id/weightCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:orientation="vertical"
+
+            android:translationX="90dp"
+            android:translationY="60dp">
+
+            <Button
+                android:id="@+id/weightSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
